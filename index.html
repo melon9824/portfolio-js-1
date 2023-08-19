@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Borel&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- font awesome -->
+        <script
+            src="https://kit.fontawesome.com/b766a53cfd.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>portfolio-js</title>
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <!-- navbar -->
+                <nav class="flex">
+                    <!-- logo -->
+                    <a href="#" class="logo">
+                        <h4>Khorshed <span>Alam</span></h4>
+                    </a>
+
+                    <!-- nav menu -->
+                    <ul class="nav__list" id="nav-menu">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active__link"
+                                >Home</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">Services</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">Portfolio</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+
+                        <!-- close menu icon -->
+                        <i class="fas fa-times close__menu" onclick="closemenu()"></i>
+                    </ul>
+
+                    <!-- open menu icon -->
+                    <i class="fas fa-bars open__menu" onclick="openmenu()"></i>
+                </nav>
+
+                <!-- header text -->
+                <div class="header__text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Khorshed <span>Alam</span></h1>
+                    <h2>Web Developer</h2>
+                    <h4>from Bangladesh</h4>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- about section -->
+            <section id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about__col-1">
+                            <img src="./assets/img/me1.webp" alt="" />
+                        </div>
+
+                        <div class="about__col-2">
+                            <h1 class="section__heading">About Me</h1>
+                            <p class="para__style">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Dolorem minus laborum
+                                exercitationem nostrum molestias, ad sed
+                                cupiditate necessitatibus eveniet iusto veniam
+                                libero quasi praesentium quaerat nihil?
+                                Dignissimos error molestiae omnis adipisci nam
+                                magnam cupiditate sapiente, amet nesciunt ut
+                                deleniti dolore dolores veritatis excepturi et?
+                                Eius quaerat officiis iure odio.
+                            </p>
+
+                            <div class="tab__titles flex">
+                                <p
+                                    class="tab__links active__link"
+                                    onclick="opentab('skills')"
+                                >
+                                    Skills
+                                </p>
+                                <p
+                                    class="tab__links"
+                                    onclick="opentab('experience')"
+                                >
+                                    Experience
+                                </p>
+                                <p
+                                    class="tab__links"
+                                    onclick="opentab('education')"
+                                >
+                                    Education
+                                </p>
+                            </div>
+
+                            <!-- skills -->
+                            <div class="tab__contents active__tab" id="skills">
+                                <ul>
+                                    <li>
+                                        <span>UI/UX</span>
+                                        <br />
+                                        Designing Web/App interfaces
+                                    </li>
+                                    <li>
+                                        <span>Web Development</span>
+                                        <br />
+                                        Web app Development
+                                    </li>
+                                    <li>
+                                        <span>App Development</span>
+                                        <br />
+                                        Building Android/ios apps
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- experience -->
+                            <div class="tab__contents" id="experience">
+                                <ul>
+                                    <li>
+                                        <span>2021 - Current</span>
+                                        <br />
+                                        Lorem ipsum dolor amet consectetur.
+                                    </li>
+                                    <li>
+                                        <span>2019 - 2021</span>
+                                        <br />
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </li>
+                                    <li>
+                                        <span>2017 - 2019</span>
+                                        <br />
+                                        Lorem ipsum dolor sit consectetur.
+                                    </li>
+                                    <li>
+                                        <span>2016 - 2017</span>
+                                        <br />
+                                        Lorem ipsum sit amet consectetur.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- education -->
+                            <div class="tab__contents" id="education">
+                                <ul>
+                                    <li>
+                                        <span>2016</span>
+                                        <br />
+                                        Lorem ipsum sit amet
+                                    </li>
+                                    <li>
+                                        <span>2016</span>
+                                        <br />
+                                        Lorem ipsum dolor sit amet ipsum
+                                    </li>
+                                    <li>
+                                        <span>2014</span>
+                                        <br />
+                                        Lorem ipsum dolor ipsum amet
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- services section -->
+            <section id="services">
+                <div class="container">
+                    <div class="services__heading">
+                        <p class="section__subheading">Services</p>
+                        <h1 class="section__heading">My Services</h1>
+                    </div>
+
+                    <div class="services__list">
+                        <div class="service">
+                            <i class="fas fa-crop-alt service__icon"></i>
+                            <h2 class="service__title">UI/UX Design</h2>
+                            <p class="para__style">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Soluta repudiandae voluptate
+                                recusandae quisquam cupiditate at similique.
+                            </p>
+                            <a href="#" class="btn service__btn">Learn more</a>
+                        </div>
+
+                        <div class="service">
+                            <i class="fas fa-code service__icon"></i>
+                            <h2 class="service__title">Web Develop</h2>
+                            <p class="para__style">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Soluta repudiandae voluptate
+                                recusandae quisquam cupiditate at similique.
+                            </p>
+                            <a href="#" class="btn service__btn">Learn more</a>
+                        </div>
+
+                        <div class="service">
+                            <i class="fab fa-app-store service__icon"></i>
+                            <h2 class="service__title">App Design</h2>
+                            <p class="para__style">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Soluta repudiandae voluptate
+                                recusandae quisquam cupiditate at similique.
+                            </p>
+                            <a href="#" class="btn service__btn">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- portfolio section -->
+            <section id="portfolio">
+                <div class="container">
+                    <div class="portfolio__heading">
+                        <p class="section__subheading">Portfolio</p>
+                        <h1 class="section__heading">My Works</h1>
+                    </div>
+
+                    <div class="work__list">
+                        <div class="work">
+                            <img
+                                src="./assets/img/work-1.png"
+                                class="work__img"
+                            />
+                            <div class="layer flex">
+                                <h3>Social Media App</h3>
+                                <p class="para__style">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Accusamus veniam minus
+                                    ipsum cumque mollitia rerum.
+                                </p>
+                                <a href="#">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="work">
+                            <img
+                                src="./assets/img/work-2.png"
+                                class="work__img"
+                            />
+                            <div class="layer flex">
+                                <h3>Music App</h3>
+                                <p class="para__style">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Accusamus veniam minus
+                                    ipsum cumque mollitia rerum.
+                                </p>
+                                <a href="#">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="work">
+                            <img
+                                src="./assets/img/work-3.png"
+                                class="work__img"
+                            />
+                            <div class="layer flex">
+                                <h3>Online Shopping App</h3>
+                                <p class="para__style">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Accusamus veniam minus
+                                    ipsum cumque mollitia rerum.
+                                </p>
+                                <a href="#">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn portfolio__btn">
+                        See more
+                        <i
+                            class="far fa-hand-point-right portfolio__btn-icon"
+                        ></i>
+                    </a>
+                </div>
+            </section>
+
+            <!-- contact section -->
+            <section id="contact">
+                <div class="container">
+                    <div class="row contact__row">
+                        <!-- left -->
+                        <div class="contact__left">
+                            <div class="contact__heading">
+                                <p class="section__subheading">Contact</p>
+                                <h1 class="section__heading">Contact Me</h1>
+                            </div>
+                            <p class="contact__mail">
+                                <i class="fas fa-envelope"></i>
+                                contact@example.com
+                            </p>
+                            <p class="contact__phone">
+                                <i class="fas fa-phone"></i>
+                                +8801724000668
+                            </p>
+
+                            <div class="contact__social-icons flex">
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+
+                            <!-- download button -->
+                            <a href="./assets/img/my-cv.pdf" 
+                                download class="btn dowmload__btn">
+                                Download CV
+                                <i class="fas fa-download download__btn-icon"></i>
+                            </a>
+                        </div>
+
+                        <!-- right -->
+                        <div class="contact__right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="name" placeholder="Your name" required/>
+                                    
+                                <input type="email" name="email" placeholder="Your email id" required/>
+
+                                <textarea name="message" rows="03" placeholder="Your message" required>
+                                </textarea>
+
+                                <button 
+                                    type="submit" 
+                                    class="btn contact__btn">
+                                        Submit
+                                        <i class="fas fa-paper-plane contact__btn-icon"></i>
+                                </button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer class="flex">
+            <p>&copy; Copyright &bullet; <a href="#">agilePoint.</a> Aug 09, 2023</p>
+            <p>Made with &#128157; by <a href="#">Khorshed Alam</a></p>
+        </footer>
+
+
+        <!-- scroll up -->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="fas fa-arrow-up"></i>
+         </a>
+
+
+        <!-- js -->
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
+
+<!-- 1:29:05 -->
